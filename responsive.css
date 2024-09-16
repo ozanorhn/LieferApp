@@ -1,0 +1,419 @@
+@media(max-width:1250px){
+    .low-container{
+        display: flex;
+    }
+}
+
+@media(min-width: 1249px){
+    .low-container{
+        display: none;
+    }
+
+    .great-layout{
+        display: none !important;
+    }
+}
+
+@media(max-width:1250px) {
+    aside{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .image-container{
+        width: 100%; 
+    }
+
+    .order{
+        width: 75vw;
+    }
+
+    .border{
+        width: 100%;
+        height: 1000px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .footer-container{
+        font-size: 13px;
+    }
+
+    .legal{
+        font-size: 11px;
+    }
+
+    .copyright{
+        font-size: 10px;
+    }
+
+    .container{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative; 
+    }
+
+    .picture-add-section{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .info-picture-feature{
+        width: 90%;
+        height: 100%;
+    }
+
+
+    .description-dish{
+        width: 100%;
+    }
+
+
+    .responsive-order{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .align-cross-container{
+        position: absolute;
+        top: -3px;
+        right: 0px;
+    }
+
+
+    footer{
+        margin-top: 50px;
+    }
+
+
+    footer{
+        height: 250px;
+    }
+}
+
+
+@media(max-width:750px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .working-hours{
+        text-align: center;
+        margin-top: 10px;
+    }  
+
+    .copyright{
+        margin-right: 0; 
+    }
+
+    footer{
+        height: 400px;
+    }
+
+    .whole-content{
+        height: 400px;
+    }
+}
+
+
+@media(max-width:500px){
+    header span{
+        display: none;
+    }
+
+    .arrow-picture-content{
+        gap:0; 
+    }
+
+    footer{
+        height: 205px;
+    }
+}
+
+
+@media(max-width:470px){
+    .intro{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .more-info{
+        display: none;
+    }
+
+    .title-like-container div{
+        display: none;
+    }
+
+    .info-icon-features{
+        display: none;
+    }
+}
+
+
+@media(max-width: 497px){
+    footer{
+        height: 400px;
+    }
+}
+
+
+@media(max-width: 380px){
+    .footer-container .contact p{
+        text-align: center;
+        white-space: pre-wrap;
+    }
+
+    .align-cross-container{
+        position: absolute;
+        top: 273px;
+        right: 0px;
+    }
+
+    footer{
+        height: 400px;
+        margin-top: 120px;
+    }
+
+    .legal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div img{
+        padding-left: 0; 
+        width: 120px;
+    }
+
+    .plus{
+        width: 30px; 
+        height: 30px;
+    }
+
+    .minus{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.low-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 1;
+    background-color: #FCFCFC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.low-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+}
+
+
+.low-container div button{
+    width: 85%;
+    height: 45px;
+    background-color: #F36805;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    gap: 15px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+.low-container div button img{
+    width: 20px;
+    height: auto;
+}
+
+
+/*responsive pop-up container*/
+
+
+.great-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(138, 138, 138, 0.9);
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.mini-basket{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 450px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+
+.d-none{
+    display: none;
+}
+
+
+.great-layout img{
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+/*-------------------------------------------------------------------------*/
+
+.great-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(138, 138, 138, 0.9);
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.mini-basket{
+    height: 45%;
+    width: 75%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.mini-basket div h2{
+    text-align: center;
+    margin-top: 15px; 
+    margin-bottom: 25px;
+}
+
+
+.last-choices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+
+.button-around{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+}
+
+
+.final-order-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+
+.final-order-button button{
+    width: 80%;
+    height: 70px;
+    border-radius: 15px;
+    border: 0; 
+    background-color: #F36805;
+}
+
+
+.final-order-button button h3{
+    color: white;
+}
+
+
+.container-new-dish{
+    width: 95%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.last-choices{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+    
+
+.btn-final-order{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+.big{
+    display: flex;
+    height: 100px;
+}
+
+
+.coordinate{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    gap: 5px;
+    margin-left: 10px;
+}

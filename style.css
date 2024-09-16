@@ -1,0 +1,455 @@
+*{
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+}
+
+
+header{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, 12%); 
+  background-color: orange;
+}
+
+
+header span{
+  font-weight: 500;
+  font-size: 14px;
+  width: 150px;
+}
+
+
+header div img{
+  width: 170px;
+  padding-left: 20px;
+}
+
+
+.flag-responsive-menu{
+  display: flex; 
+  justify-content: space-around;
+  padding-right: 25px;  
+}
+
+
+header .flag-responsive-menu img{
+  width: 25px;
+  gap: 15px;
+
+  &:hover{
+      cursor: pointer;
+  }
+}
+
+
+header .flag-responsive-menu .language-changer img{
+  border-radius: 50%;
+}
+
+
+section{
+  width: 77vw;
+
+}
+
+
+section img{
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+
+.section-aside-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+aside{
+  width: 23vw; 
+  max-height: 100%;
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, 12%);
+}
+
+
+.image-container{
+  height: 515px;
+  position: relative;
+  display: block;
+}
+
+
+.overlay{
+  position: absolute;
+  bottom: 25px;
+  left: 93px;
+}   
+
+
+.image-container .overlay img{
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  border: 1px solid rgb(222, 222, 222); 
+}
+
+
+.order{
+  width: 77vw;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom:  3px;
+  box-shadow: 0 4px 2px -2px #c7c7c7; 
+}
+
+
+aside h2{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+.title-like-container{
+  display: flex;
+  justify-content: space-between;  
+  align-items: start;
+  width: 65vw;
+}
+
+
+.title-like-container h1{
+  font-size: 25px;
+  margin-block-start: 0;
+}
+
+
+.title-like-container div{
+  gap: 10px;
+  display: flex;
+}
+
+
+.title-like-container div div{
+  display: flex;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+}
+
+
+.title-like-container div div:hover{
+  background-color: rgb(246, 246, 246);
+  cursor: pointer;
+}
+
+
+.title-like-container .h1{
+  font-size: 1px;
+}
+
+.favorite-button-icon{
+  width: 27px;
+  height: 27px;
+}
+
+
+.reviews-container{
+  width: 65vw;
+  display: flex; 
+  align-items: center;
+  gap: 6px;
+  color: yellow;
+}
+
+.reviews{
+  width: 16px;
+  height: 16px;
+}
+
+
+.reviews-container span{
+  font-size: 16px;
+  color: black;
+}
+
+
+.order-features{
+  width: 65vw;
+  display: flex;
+  justify-content: start;
+  padding-top: 5px;
+  gap: 6px;
+}
+
+
+.order-features img{
+  width: 20px;
+  height: auto;
+}
+
+
+.order-features span{
+  color: rgb(60,76,79); 
+}
+
+
+.intro{
+  width: 65vw;
+}
+
+
+.intro p{
+  color: rgb(36,46,48); 
+  font-weight: 300;
+}
+
+
+.more-info{
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10px;
+}
+
+
+.more-info:hover{
+  background-color: rgb(243, 243, 243);
+}
+
+/*Dieser Berreich ist derjenige nach dem Text, also der Beschreibung des Restaurants*/
+
+.more-info div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.more-info div img{
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+}
+
+
+.more-info div span{
+  font-weight: 500;
+}
+
+
+.more-info span{
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  margin-right: 5px; 
+}
+
+
+.removeClassViaJs{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+
+.removeClassViaJs h2{
+  margin-block-start: 0.83em;
+  margin-block-end: 5px; 
+  text-align: center; 
+}
+
+
+.removeClassViaJs .shopping-bag{
+  width: 40px;
+  height: auto;
+}
+
+
+.removeClassViaJs div{
+  font-weight: 300;
+  text-align: center;
+}
+
+
+.border{
+  width: 77vw;
+  height: 700px;
+  background-color: rgb(252,252,252); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*Ab hier fÃ¤ngt der Contet mir JS an, also, dynamischer Code*/
+
+.slide-container{
+  display: flex;
+  align-items: center;
+  height: 50px; 
+  width: 55vw;
+  gap: 40px; 
+  overflow-x: scroll;
+  scrollbar-width: none;
+  white-space: nowrap;
+  transition:right 1s linear; 
+  -webkit-overflow-scrolling: touch; 
+}
+
+
+.slide-container::-webkit-scrollbar{
+  display: none;
+}
+
+
+.arrow-picture-content button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  border: none;
+  background-color: #eece93;
+}
+
+
+.arrow-picture-content button:hover{
+  background-color: rgb(188, 151, 83);
+  cursor: pointer;
+}
+
+
+.arrow-size{
+  width: 20px;
+  cursor: pointer;
+}
+
+
+.arrow-picture-content{
+  margin-top: 15px; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.slide-dish{
+  font-size: 16px;  
+}
+
+
+.recomendation-bar{
+  display: flex;
+  align-items: center;
+  width: calc(100% + 15px); 
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.recomendation-bar:hover{
+  background-color: rgb(246, 246, 246);
+  cursor: pointer;
+}
+
+
+/*Ab hier wird der Footer gestylt.*/
+
+footer{
+  width: 100%; 
+  height: 160px; 
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+
+.footer-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+
+.legal{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px; 
+  cursor: pointer;
+}
+
+
+.copyright{
+  margin-top: 15px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer; 
+  font-size: 10px;   
+  margin-right: 100px; 
+}
+
+
+.hover-feature{
+  text-decoration: none;
+  color: black;
+
+  &:hover{
+      color: grey;
+  }
+}
+  
+
+.whole-content{
+  height: 230px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
