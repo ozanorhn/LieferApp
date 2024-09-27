@@ -42,6 +42,9 @@ header div img{
   padding-right: 25px;  
 }
 
+.hidden {
+  display: none;
+}
 
 header .flag-responsive-menu img{
   width: 25px;
@@ -436,20 +439,3 @@ footer{
   height: 230px;
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

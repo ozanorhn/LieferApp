@@ -14,9 +14,7 @@ let dishes = [
         'description': 'Süße Panna Cotta auf einem Pizzaboden, verfeinert mit Südtiroler Aromen',
         'price': 6.50
     },
-  
-]
-;
+];
 
 
 let menus = [];
@@ -38,16 +36,12 @@ return /*html*/ `
 <div class="description-dish">
         <div>
             <h3>${dish['title']}</h3>
-         
-        </div>
+         </div>
     <span>${dish['description']}</span>
     <span class="price"><b>${dish['price'].toFixed(2).replace('.' , ',')} €</b></span>
 </div>
-<div class="picture-add-section">
-   
-    <div class="align-cross-container" >
         <div class="cross-container" onclick="addItemToBasket(${i})">
-            <div class="horizontal-cross-line"></div>
+           <div class="horizontal-cross-line"></div>
             <div class= "vertical-cross-line"></div>
         </div>
     </div>
@@ -56,13 +50,23 @@ return /*html*/ `
 }
 
 
-function renderEmptyBasket() { 
+function renderEmptyBasket() { // Das rendert den Basket wenn er noch leer ist. 
     document.getElementById('wholeAsideDiv').innerHTML = showEmptyBasket(); 
 }
 
 
-
-
+function showEmptyBasket(){
+    return `
+     <h2>Warenkorb</h2>
+        <div id="asideDiv" class="removeClassViaJs" class="d-none">
+         <img class="shopping-bag" src="./assets/img/lieferung.png" alt="shopping-bag">
+           <h2>Füg etwas in deinen Warenkorb</h2>
+            <div>Wähle aus unseren delikaten Gerichten auf der Speisekarte und lass dir dein Essen nach Hause liefern.
+            </div>
+            <div id="showContent">
+            </div>
+        </div>`;
+}
 
 
 function renderIncompleteBasket() {  
@@ -94,6 +98,7 @@ function renderIncompleteBasket() {
             <h3 id="pay">Bestellen</h3>
         </div>
     </div>
+    
 </div> 
 </div>`;
 }
@@ -162,7 +167,7 @@ function showNewBasket(i){
 function updateBasket() {
     let sum = 0;
     for (let i = 0; i < prices.length; i++) {
-            const price = prices[i] * amounts[i];  
+            const price = prices[i] * amounts[i];  // Änderung von Junus: Man soll multiplizieren mit der Menge
             sum += price;
     }
     let finalSum = (sum + 4.50).toFixed(2); 
@@ -231,12 +236,10 @@ function decreaseAmounts(i){
     }  
 }
 
-
 function sendOrder(){
   document.getElementById('sendOrder').innerHTML = showOrderContainer();
   startTimer();
   closeMenu(); 
-  
 } 
 
 
@@ -249,8 +252,7 @@ function showOrderContainer(){
                 <span>Deine Bestellung ist unterwegs</span>
             </div>
             <div class="picture-content">
-            
-                <span>Guten Apettit</span>
+                <span>Guten Apettit/span>
             </div>
         </div>
     </div>`; 
@@ -264,27 +266,4 @@ function startTimer(){
     displayNewBasket(); 
     deleteAllItems(); 
     renderEmptyBasket();    
-}
-
-function increaseAmountsResponsive(i){
-    amounts[i]++;  
-    updateBasket();
-    showOpenBasket(); 
-}
-
-
-function decreaseAmountsResponsive(i){ 
-    amounts[i]--; 
-    if (amounts[i] <= 0) {
-        menus.splice(i, 1); 
-        prices.splice(i, 1); 
-        amounts.splice(i, 1);
-    } 
-    updateBasket(); 
-    showOpenBasket();
-    if (amounts && menus == 0) {
-        deleteAllItems(); 
-        closeMenu(); 
-        return
-    }  
 }

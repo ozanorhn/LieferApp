@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,18 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <title>BestellApp</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="JS.css">
     <link rel="stylesheet" href="JSbasket.css">
     <link rel="stylesheet" href="responsive.css">
     <script src="./js/script.js"></script>
     <script src="./js/slideBar.js"></script>
-    <script src="./js/template.js"></script>
+    <script src="./js/responsive.js"></script>
 </head>
 
 
 <body onload="renderSlidesDishes(); offers(); renderEmptyBasket()">
     <header>
-        <div> 
+        <div>
             <img src="./assets/img/Logo.png" alt="">
         </div>
 
@@ -41,63 +41,68 @@
     <div class="section-aside-container">
 
         <section>
-                <div class="image-container">
-                  <img src="./assets/img/pizza.jpg" alt="Bild mit Pizza">
-                  <div class="overlay">
-                    <img src="./assets/img/hot-brick-logo-that-can-be-used-for-pizza-company-inspiration-with-vintage-food-utensil-sign-logos-for-restaurants-cafes-clubs-and-badges-free-vector.jpg" alt="">
-                  </div>
+            <div class="image-container">
+                <img src="./assets/img/pizza.jpg" alt="Bild mit Pizza">
+                <div class="overlay">
+                    <img src="./assets/img/hot-brick-logo-that-can-be-used-for-pizza-company-inspiration-with-vintage-food-utensil-sign-logos-for-restaurants-cafes-clubs-and-badges-free-vector.jpg"
+                        alt="">
                 </div>
-               
-                <div class="responsive-order">
+            </div>
+
+            <div class="responsive-order">
                 <div class="order">
 
                     <div class="line-between"> <!--contains section and the for loop-->
                         <div class="title-like-container">
                             <h1>Pizzeria Bella Italia</h1>
                             <div>
-                               <div><img class="favorite-button-icon" src="./assets/img/lupe.svg" alt="Herz-Icon"></div> 
-                                <div><img class="favorite-button-icon" src="./assets/img/heart0.svg" alt="Herz-Icon"></div> 
+                                <div><img class="favorite-button-icon" src="./assets/img/lupe.svg" alt="Herz-Icon">
+                                </div>
+                                <div><img class="favorite-button-icon" src="./assets/img/heart0.svg" alt="Herz-Icon">
+                                </div>
                             </div>
                         </div>
 
                         <div class="reviews-container">
                             ★★★★★
-                            
-                            <span><b>4.9</b>   (400+)</span>
+
+                            <span><b>4.9</b> (400+)</span>
                         </div>
 
                         <div class="order-features">
-                          <img src="./assets/img/in-den-warenkorb-legen.png" alt="">
+                            <img src="./assets/img/in-den-warenkorb-legen.png" alt="">
                             <span>Min. 17,00 €</span>
                             <span>&#9679;</span>
                             <img src="./assets/img/lieferung.png" alt="Grünes Fahrrad"><span>04,50 €</span>
                         </div>
 
                         <div class="intro">
-                            <p>Erleben Sie die Leidenschaft und Frische unserer italienischen Küche direkt bei Ihnen zu Hause. Von hausgemachten Pizzen und Pasta bis hin zu weiteren köstlichen Spezialitäten – wir bringen den Geschmack Italiens zu Ihnen.</p>
+                            <p>Erleben Sie die Leidenschaft und Frische unserer italienischen Küche direkt bei Ihnen zu
+                                Hause. Von hausgemachten Pizzen und Pasta bis hin zu weiteren köstlichen Spezialitäten –
+                                wir bringen den Geschmack Italiens zu Ihnen.</p>
                         </div>
 
-                    
 
-                </div> 
 
-                <div class="arrow-picture-content">
-                    <button onclick="slideOnClick()" id="prev-slide">
-                        <p class="arrow-size">L</p>
-                    </button>
-                    <div class="slide-container" id="foodSlide"></div>
-                    <button onclick="slideOnClick()" id="next-slide">
-                        <p class="arrow-size">R</p>
-                    </button>
+                    </div>
+
+                    <div class="arrow-picture-content">
+                        <button onclick="slideOnClick()" id="prev-slide">
+                            <p class="arrow-size">L</p>
+                        </button>
+                        <div class="slide-container" id="foodSlide"></div>
+                        <button onclick="slideOnClick()" id="next-slide">
+                            <p class="arrow-size">R</p>
+                        </button>
+                    </div>
+
                 </div>
-                
             </div>
-        </div>
-                                  
-                <div id="choiceMenu" class="border"></div> 
+
+            <div id="choiceMenu" class="border"></div>
         </section>
 
-        <aside id="wholeAsideDiv" class="responsive">   
+        <aside id="wholeAsideDiv" class="responsive">
         </aside>
     </div>
 
@@ -115,7 +120,6 @@
     </div>
 
 
-   
     <div id="showNewContent"></div>
 
     <footer>
@@ -123,14 +127,11 @@
             <div class="footer-container">
                 <div class="contact">
                     <h3>Kontakt</h3>
-                    <p>Bella Italia</p>
-                    <p>Hauptstraße 27
-                        12345 Berlin
-                        Deutschland
-                    </p>
-                    <a class="hover-feature" href="tel:+491701234567">+49 170 12 34 567</a> 
+                    <p>Bella Italia, Hauptstraße 27, 2345 Berlin</p>
+
+                    <a class="hover-feature" href="tel:+491701234567">+49 170 12 34 567</a>
                     <a class="hover-feature" href="mailto:kontakt@bellaitaliaberlin.de">kontakt@bellaitaliaberlin.de</a>
-                    <a class="hover-feature" href="tel:+493012345678">+49 30 12 34 5678</a>
+
                 </div>
                 <div class="working-hours">
                     <h3>Öffnungszeiten</h3>
@@ -142,11 +143,12 @@
                 <li>Datenschutz</li>
                 <li>Datenschutzeinstellungen</li>
             </nav>
-    
+
             <div class="copyright">© 2024 Bella Italia</div>
         </div>
     </footer>
-    
+
     
 </body>
+
 </html>
